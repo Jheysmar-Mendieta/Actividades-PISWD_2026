@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- configuracion basica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- titulo -->
+    <title>Calculadora Web</title>
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+
+<body>
+
+<!-- titulo de la pagina -->
+<h1>Calculadora</h1>
+
+<div class="calculadora">
+
+    <!-- pantalla donde se muestra el numero -->
+    <div class="pantalla">
+        <div id="resultado">0</div>
+    </div>
+
+    <!-- botones de la calculadora -->
+    <div class="botones">
+
+        <!-- limpiar -->
+        <button data-action="clear">C</button>
+
+        <!-- division -->
+        <button data-action="op" data-val="/">÷</button>
+
+        <!-- multiplicacion -->
+        <button data-action="op" data-val="*">×</button>
+
+        <!-- borrar ultimo numero -->
+        <button data-action="delete">⌫</button>
+
+        <button data-action="num" data-val="7">7</button>
+        <button data-action="num" data-val="8">8</button>
+        <button data-action="num" data-val="9">9</button>
+
+        <!-- suma -->
+        <button data-action="op" data-val="+">+</button>
+
+        <button data-action="num" data-val="4">4</button>
+        <button data-action="num" data-val="5">5</button>
+        <button data-action="num" data-val="6">6</button>
+
+        <!-- resta -->
+        <button data-action="op" data-val="-">−</button>
+
+
+        <button data-action="num" data-val="1">1</button>
+        <button data-action="num" data-val="2">2</button>
+        <button data-action="num" data-val="3">3</button>
+
+        <!-- calcular -->
+        <button data-action="equals">=</button>
+
+        <button data-action="num" data-val="0">0</button>
+
+        <!-- punto decimal -->
+        <button data-action="dot">.</button>
+
+    </div>
+
+</div>
+
+<!-- script de la calculadora -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
