@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.calendar {
+    width: 340px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.calendar__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar__prev,
+.calendar__next {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: rgba(255,255,255,0.1);
+}
+
+.calendar__prev:hover,
+.calendar__next:hover {
+    background: #00c6ff;
+    color: black;
+    transform: scale(1.2);
+}
+
+.calendar__month {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.calendar__year {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.calendar-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.fade {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.calendar-days div {
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.calendar-days div:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+.today {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    font-weight: bold;
+}
+
+.selected {
+    outline: 2px solid yellow;
+    transform: scale(1.15);
+}
+.holiday {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.today.holiday {
+    background: linear-gradient(135deg, gold, orange);
+    color: black;
+}
