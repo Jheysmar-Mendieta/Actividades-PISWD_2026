@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Galería de Imágenes</h1>
+
+<div class="gallery">
+    <img src="img/001.png" onclick="abrirModal(0)">
+    <img src="img/002.png" onclick="abrirModal(1)">
+    <img src="img/003.png" onclick="abrirModal(2)">
+    <img src="img/004.png" onclick="abrirModal(3)">
+    <img src="img/005.png" onclick="abrirModal(4)">
+    <img src="img/006.png" onclick="abrirModal(5)">
+    <img src="img/007.png" onclick="abrirModal(6)">
+    <img src="img/008.png" onclick="abrirModal(7)">
+    <img src="img/009.png" onclick="abrirModal(8)">
+</div>
+
+<div id="modal" class="modal">
+    <span class="cerrar" onclick="cerrarModal()">×</span>
+
+    <button class="prev" onclick="cambiar(-1)">❮</button>
+
+    <div class="contenido-modal">
+        <img id="imagenGrande">
+
+        <!-- 🆕 INFO -->
+        <div class="info">
+            <h2 id="titulo"></h2>
+            <p id="descripcion"></p>
+        </div>
+    </div>
+
+    <button class="next" onclick="cambiar(1)">❯</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
